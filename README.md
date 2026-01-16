@@ -1,2 +1,3 @@
 # learn-dl
-Just some code for learning deep learning.
+
+个人的 DL 学习代码集合
