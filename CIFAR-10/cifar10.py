@@ -49,9 +49,9 @@ class CIFAR10Dataset(Dataset):
 
 batch_size = 50
 
-train_dataset = CIFAR10Dataset(data_path='../data/kaggle_cifar10_tiny/train', labels_path='../data/kaggle_cifar10_tiny/trainLabels.csv')
+train_dataset = CIFAR10Dataset(data_path='data/kaggle_cifar10_tiny/train', labels_path='data/kaggle_cifar10_tiny/trainLabels.csv')
 train_loader = DataLoader(train_dataset, shuffle=True, batch_size=batch_size, num_workers=4)
-test_dataset = CIFAR10Dataset(data_path='../data/kaggle_cifar10_tiny/test')
+test_dataset = CIFAR10Dataset(data_path='data/kaggle_cifar10_tiny/test')
 test_loader = DataLoader(test_dataset, shuffle=False, batch_size=batch_size)
 
 class ResidualBlock(nn.Module):
